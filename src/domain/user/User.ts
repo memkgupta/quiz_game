@@ -3,7 +3,7 @@ export class User {
     public readonly id: string,
     public readonly name: string,
     public readonly email: string,
-    
+    public readonly passwordHash:string
   ) {
     if (!id) {
       throw new Error("User id is required");
